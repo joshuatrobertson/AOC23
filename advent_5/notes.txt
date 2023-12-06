@@ -1,0 +1,34 @@
+1) Add seeds into array DONE
+    a) first word = seeds:
+    b) add into array
+2) Add soil needed for each seed (gardening object with destination, source, range)
+3) add fertilizer for seed (same)
+4) add water
+5)add light
+6) add temp
+7) add humidity
+8) add location
+
+take seed
+return lowest soil
+use that to return lowest etc (do we do ones out of range?)
+
+
+take first number
+
+take second
+
+loop through first number++ second number of times
+
+
+
+find how many places gone up for 79
+add them to initial
+
+source range (n+1)
+destination (x+1)
+length (x)
+
+get given a seed
+
+Look through list, if any return values take the lowest, else return seed
