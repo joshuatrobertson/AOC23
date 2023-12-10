@@ -40,7 +40,6 @@ public class Main {
                 // split by number, word
                 Matcher matcher = regex.matcher(colourInput);
                 while (matcher.find()) {
-
                     int number = Integer.parseInt(matcher.group(1));
                     String colour = matcher.group(2).toLowerCase(); // Convert to lowercase for case-insensitive matching
                     if (colourMap.get(colour) < number) {
@@ -48,16 +47,11 @@ public class Main {
                     }
                 }
                 int cubePower = colourMap.get("red") * colourMap.get("blue") * colourMap.get("green");
-                System.out.println("Game: " + gameNumber + " Power: " + cubePower);
                 secondTotalNumber += cubePower;
 
                 if ((colourMap.get("red") <= 12) && (colourMap.get("green") <= 13) && (colourMap.get("blue") <= 14)){
                     totalNumber += gameNumber;
-                    System.out.println("Game number = " + gameNumber);
-                    System.out.println("Red: " + colourMap.get("red") + " :: Blue: " + colourMap.get("blue") + " :: Green: " + colourMap.get("green"));
-                    System.out.println("Running Total = " + totalNumber);
                 }
-
             }
 
             System.out.println("Total for game = " + totalNumber);
